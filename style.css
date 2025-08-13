@@ -1,0 +1,169 @@
+/* 基本樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #8B4513;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    color: #A0522D;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.question-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.question-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.question-section select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.coins-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.coins-section h2 {
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+.coins-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.coin-row {
+    display: contents;
+}
+
+.throw-label {
+    grid-column: 1 / -1;
+    text-align: left;
+    padding: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.coin-btn {
+    padding: 15px;
+    background-color: #f0e6d2;
+    border: 2px solid #d4a76a;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.coin-btn:hover {
+    background-color: #e6d5b8;
+    transform: scale(1.05);
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    margin: 0 auto 30px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #A0522D;
+}
+
+.result-section {
+    padding: 20px;
+    background-color: #f9f5f0;
+    border-radius: 5px;
+    border-left: 4px solid #8B4513;
+}
+
+.result-section h2 {
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.result-section h3 {
+    color: #A0522D;
+    margin: 15px 0 10px;
+    font-size: 1.1rem;
+}
+
+.result-section p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .coins-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}

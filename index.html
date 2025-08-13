@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易經占卜 - 三枚硬幣法</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>易經占卜</h1>
+            <p class="subtitle">三枚硬幣法</p>
+        </header>
+
+        <div class="question-section">
+            <label for="question">請選擇想詢問的事項：</label>
+            <select id="question">
+                <option value="財運">財運</option>
+                <option value="學習">學習</option>
+                <option value="事業">事業</option>
+                <option value="感情">感情</option>
+                <option value="健康">健康</option>
+                <option value="其他">其他</option>
+            </select>
+        </div>
+
+        <div class="coins-section">
+            <h2>請投擲硬幣</h2>
+            <p>點擊硬幣切換「人頭」或「十元」狀態</p>
+            <div id="coins-container" class="coins-grid"></div>
+        </div>
+
+        <button id="interpret-btn" class="btn">解讀卦象</button>
+
+        <div id="result" class="result-section"></div>
+    </div>
+
+    <footer>
+        <p>© 2025 易經占卜工具</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
